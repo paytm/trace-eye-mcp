@@ -1,0 +1,138 @@
+{
+    "FSM": {
+        "name": "FSM",
+        "endpoint": "fsm",
+        "log_index_path": "fse_backend_access_app*,fse_access_nginx*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "ADAS": {
+        "name": "ADAS",
+        "endpoint": "adas",
+        "log_index_path": "fsm-adas-*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "AgentHub": {
+        "name": "AgentHub",
+        "endpoint": "agentHub",
+        "log_index_path": "fsm-agenthub*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "GG_BOT": {
+        "name": "GG_BOT",
+        "endpoint": "ggBot",
+        "log_index_path": "fsm-ggbot-*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "MDH": {
+        "name": "MDH",
+        "endpoint": "mdh",
+        "log_index_path": "fsm-mdh*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "MDM": {
+        "name": "MDM",
+        "endpoint": "mdm",
+        "log_index_path": "fse_tms_rtvmn*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "TMS": {
+        "name": "TMS",
+        "endpoint": "tms",
+        "log_index_path": "fsm-task-batch*,fsm-tms*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "TR": {
+        "name": "TR",
+        "endpoint": "tr",
+        "log_index_path": "fsm-tr*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "ZM": {
+        "name": "ZM",
+        "endpoint": "zm",
+        "log_index_path": "fsm-zm*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "OE_DEFAULT_INDEXER": {
+        "name": "OE_DEFAULT_INDEXER",
+        "endpoint": "oe/default_indexer",
+        "log_index_path": "oe_ec2_oedefault_indexer_*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "OE_PANEL": {
+        "name": "OE_PANEL",
+        "endpoint": "oe/panel",
+        "log_index_path": "oe_ec2_oe-batch_indexer_*,oe_ec2_lb_indexer_*,oe_ec2_oedefault_indexer_*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "OE_DEVICE_SERVICE": {
+        "name": "OE_DEVICE_SERVICE",
+        "endpoint": "oe/deviceService",
+        "log_index_path": "oe_eks_prod_device-service-batch_*,oe_eks_prod_device-service_*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "OE_BFF": {
+        "name": "OE_BFF",
+        "endpoint": "oe/bff",
+        "log_index_path": "oe_eks_prod_oe-service-bff_*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "KYB_MAIN": {
+        "name": "KYB_MAIN",
+        "endpoint": "kyb/main",
+        "log_index_path": "kyb_access_nginx_indexer_*,kyb_backendv1_access_app_indexer_*,prod_address-listener*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "DMS_MAIN": {
+        "name": "DMS_MAIN",
+        "endpoint": "dms/main",
+        "log_index_path": "nginx_dms-prod*,prod_dms-web*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "BOSS_MSSS": {
+        "name": "BOSS_MSSS",
+        "endpoint": "boss/msss",
+        "log_index_path": "graviton-boss-merchant-maestro-service*,graviton-boss-msss-consumer*,graviton-boss-msss-service-app_log*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    },
+    "BOSS_MAIN": {
+        "name": "BOSS_MAIN",
+        "endpoint": "boss/main",
+        "log_index_path": "graviton-boss-app-new*",
+        "es_source_fields": ["message"],
+        "es_sort_field": "@timestamp",
+        "es_search_query": ["error exception"]
+    }
+}
